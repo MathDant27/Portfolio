@@ -72,6 +72,30 @@ body {
     transition: width 1s ease-in-out;
 }
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+
 #scrollToTop {
     transition: opacity 0.3s, visibility 0.3s;
     opacity: 0;
@@ -81,4 +105,36 @@ body {
 #scrollToTop.visible {
     opacity: 1;
     visibility: visible;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-zoom-in {
+    animation: zoom-in 0.8s ease-out forwards;
 }
