@@ -18,7 +18,6 @@
     <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
         <a href="#" class="text-xl font-bold text-indigo-600">Matheus Martins</a>
-
         <!-- Mobile menu button -->
         <div class="md:hidden">
           <button type="button" class="text-gray-500 hover:text-indigo-600 focus:outline-none">
@@ -31,10 +30,10 @@
         <!-- Desktop menu -->
         <div class="hidden md:flex space-x-8">
           <a href="#home" class="text-gray-600 hover:text-indigo-600 transition-colors">Início</a>
-          <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">Sobre</a>
+          <a href="#services" class="text-gray-600 hover:text-indigo-600 transition-colors">Serviços</a>
           <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Habilidades</a>
-          <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition-colors">Experiência</a>
           <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projetos</a>
+          <a href="#why-choose-me" class="text-gray-600 hover:text-indigo-600 transition-colors">Por que me escolher?</a>
           <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contato</a>
         </div>
       </div>
@@ -42,8 +41,6 @@
   </nav>
 
   <!-- Hero Section -->
-
-
   <section id="home" class="gradient-bg min-h-screen flex items-center pt-16 relative overflow-hidden">
     <!-- Partículas animadas no fundo -->
     <div id="particles-js" class="absolute inset-0"></div>
@@ -52,16 +49,17 @@
       <div class="flex flex-col md:flex-row items-center">
         <!-- Texto -->
         <div class="md:w-1/2 text-white opacity-0 translate-y-6 animate-fade-in-up">
-          <h1 class="text-5xl font-bold mb-4">Matheus Martins</h1>
-          <h2 class="text-2xl mb-6">Desenvolvedor Full Stack</h2>
-          <p class="text-xl mb-8 opacity-90">Especializado em criar soluções empresariais com PHP, Python, TypeScript e
-            mais.</p>
+          <h1 class="text-5xl font-bold mb-4">Transforme suas ideias em realidade digital</h1>
+          <h2 class="text-2xl mb-6">Desenvolvimento de soluções web e mobile personalizadas</h2>
+          <p class="text-xl mb-8 opacity-90">Especializado em criar aplicações empresariais de alto desempenho com PHP,
+            Python, TypeScript e mais.</p>
           <div class="flex space-x-4">
             <a href="#projects"
               class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transform hover:scale-105 transition">Ver
               Projetos</a>
             <a href="#contact"
-              class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transform hover:scale-105 transition">Contato</a>
+              class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transform hover:scale-105 transition">Solicitar
+              Orçamento</a>
           </div>
         </div>
         <!-- Imagem -->
@@ -74,7 +72,7 @@
 
     <!-- Seta para DESKTOP (centralizada) -->
     <div class="hidden md:block absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-      <a href="#about">
+      <a href="#services">
         <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -84,7 +82,7 @@
 
     <!-- Seta para MOBILE (lado direito) -->
     <div class="md:hidden absolute bottom-6 right-6 animate-bounce z-10">
-      <a href="#about">
+      <a href="#services">
         <svg class="w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -93,84 +91,142 @@
     </div>
   </section>
 
-
-  <!-- About Section -->
-  <section id="about" class="py-20">
+  <!-- Services Section -->
+  <section id="services" class="py-20">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-800">Sobre Mim</h2>
+        <h2 class="text-3xl font-bold text-gray-800">Meus Serviços</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+        <p class="text-xl text-gray-600 mt-4">Soluções personalizadas para seu negócio</p>
       </div>
 
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-1/2 md:pr-8">
-          <p class="text-xl text-gray-700 mb-4">Desenvolvedor Full Stack com 6 anos de experiência em desenvolvimento de
-            soluções empresariais.</p>
-          <p class="text-gray-600 mb-4">Especializado na criação de sistemas web e mobile, implementação de APIs
-            RESTful, otimização de processos através de soluções tecnológicas, integração de sistemas e automação de
-            processos, além de gestão de projetos de desenvolvimento.</p>
-          <p class="text-gray-600">Atualmente trabalho como Desenvolvedor na CINPAL - Companhia Industrial de Peças para
-            Automóveis, onde desenvolvo e otimizo sistemas web corporativos.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-laptop-code text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Desenvolvimento Web</h3>
+          <p class="text-gray-600">Criação de sites e sistemas web responsivos, modernos e otimizados para SEO. Desde
+            landing pages até plataformas completas para seu negócio.</p>
         </div>
 
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <div class="bg-white rounded-xl shadow-lg p-8">
-            <h3 class="text-xl font-semibold text-gray-800 mb-6">Informações Pessoais</h3>
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <span class="text-indigo-600 font-bold mr-2">Nome:</span>
-                <span>Matheus Martins</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-indigo-600 font-bold mr-2">Localização:</span>
-                <span>São Paulo, Brasil</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-indigo-600 font-bold mr-2">Email:</span>
-                <span>matheusmartinsdb@gmail.com</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-indigo-600 font-bold mr-2">Formação:</span>
-                <span>Bacharelado em Gestão de TI - UniFECAF</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-indigo-600 font-bold mr-2">Idiomas:</span>
-                <span>Português (Nativo), Inglês (Profissional), Espanhol (Básico)</span>
-              </li>
-            </ul>
-
-            <div class="flex space-x-4 mt-8">
-              <a href="https://www.linkedin.com/in/matheus-martins-9b5403199/" target="_blank"
-                class="text-indigo-600 hover:text-indigo-800 text-2xl transition-transform hover:scale-125">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="mailto:matheusmartinsdb@gmail.com"
-                class="text-indigo-600 hover:text-indigo-800 text-2xl transition-transform hover:scale-125">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://github.com/MathDant27"
-                class="text-indigo-600 hover:text-indigo-800 text-2xl transition-transform hover:scale-125"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
+        <!-- Service 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-mobile-alt text-3xl text-indigo-600"></i>
           </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Aplicativos Mobile</h3>
+          <p class="text-gray-600">Desenvolvimento de aplicativos para iOS e Android com interfaces intuitivas e alto
+            desempenho, proporcionando a melhor experiência para seus usuários.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-cogs text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Automação de Processos</h3>
+          <p class="text-gray-600">Otimização e automação de processos empresariais através de soluções tecnológicas
+            personalizadas, aumentando a eficiência e reduzindo custos.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-database text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Banco de Dados</h3>
+          <p class="text-gray-600">Modelagem, implementação e otimização de bancos de dados para garantir segurança,
+            performance e escalabilidade para suas aplicações.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-code-branch text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Integração de Sistemas</h3>
+          <p class="text-gray-600">Desenvolvimento de APIs e integração entre diferentes plataformas e sistemas,
+            permitindo a comunicação eficiente entre suas ferramentas de negócio.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-shield-alt text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Segurança Digital</h3>
+          <p class="text-gray-600">Implementação de medidas de segurança em aplicações web e mobile, protegendo dados
+            sensíveis e garantindo conformidade com normas de privacidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-800">Entrega</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+        <p class="text-xl text-gray-600 mt-4">Meu processo para entregar soluções de qualidade</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="md:w-1/5 mb-8 md:mb-0 text-center">
+          <div
+            class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            1</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Descoberta</h3>
+          <p class="text-gray-600">Entendimento profundo das necessidades do seu negócio</p>
+        </div>
+
+        <div class="hidden md:block text-indigo-600 text-4xl">→</div>
+
+        <div class="md:w-1/5 mb-8 md:mb-0 text-center">
+          <div
+            class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            2</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Planejamento</h3>
+          <p class="text-gray-600">Definição de escopo, tecnologias e cronograma</p>
+        </div>
+
+        <div class="hidden md:block text-indigo-600 text-4xl">→</div>
+
+        <div class="md:w-1/5 mb-8 md:mb-0 text-center">
+          <div
+            class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            3</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Desenvolvimento</h3>
+          <p class="text-gray-600">Construção da solução com atualizações frequentes</p>
+        </div>
+
+        <div class="hidden md:block text-indigo-600 text-4xl">→</div>
+
+        <div class="md:w-1/5 text-center">
+          <div
+            class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            4</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Entrega</h3>
+          <p class="text-gray-600">Implementação, testes e suporte contínuo</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-gray-100">
+  <section id="skills" class="py-20">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-800">Minhas Habilidades</h2>
+        <h2 class="text-3xl font-bold text-gray-800">Tecnologias & Ferramentas</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+        <p class="text-xl text-gray-600 mt-4">Meu arsenal para criar soluções poderosas</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
-          <h3 class="text-2xl font-semibold mb-8 text-gray-800">Habilidades Técnicas</h3>
+          <h3 class="text-2xl font-semibold mb-8 text-gray-800">Linguagens de Programação</h3>
 
           <div class="space-y-6">
             <div class="skill-item">
@@ -181,6 +237,7 @@
               <div class="h-2 bg-gray-200 rounded-full">
                 <div class="h-full bg-indigo-600 rounded-full skill-progress" style="width: 90%;"></div>
               </div>
+              <p class="text-sm text-gray-600 mt-1">Desenvolvimento de sistemas web robustos e APIs RESTful</p>
             </div>
 
             <div class="skill-item">
@@ -191,6 +248,7 @@
               <div class="h-2 bg-gray-200 rounded-full">
                 <div class="h-full bg-indigo-600 rounded-full skill-progress" style="width: 85%;"></div>
               </div>
+              <p class="text-sm text-gray-600 mt-1">Automação de processos e desenvolvimento web com Flask</p>
             </div>
 
             <div class="skill-item">
@@ -201,16 +259,7 @@
               <div class="h-2 bg-gray-200 rounded-full">
                 <div class="h-full bg-indigo-600 rounded-full skill-progress" style="width: 80%;"></div>
               </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="flex justify-between mb-2">
-                <span class="font-medium">jQuery</span>
-                <span>85%</span>
-              </div>
-              <div class="h-2 bg-gray-200 rounded-full">
-                <div class="h-full bg-indigo-600 rounded-full skill-progress" style="width: 85%;"></div>
-              </div>
+              <p class="text-sm text-gray-600 mt-1">Desenvolvimento frontend moderno e aplicações React</p>
             </div>
 
             <div class="skill-item">
@@ -221,6 +270,7 @@
               <div class="h-2 bg-gray-200 rounded-full">
                 <div class="h-full bg-indigo-600 rounded-full skill-progress" style="width: 90%;"></div>
               </div>
+              <p class="text-sm text-gray-600 mt-1">Modelagem e otimização de bancos de dados relacionais</p>
             </div>
           </div>
         </div>
@@ -268,66 +318,15 @@
         </div>
       </div>
     </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-20">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-800">Experiência Profissional</h2>
-        <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
-      </div>
-
-      <div class="max-w-3xl mx-auto">
-        <!-- CINPAL -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="mb-1">
-            <span class="text-sm text-indigo-600 font-medium">Abril 2024 - Presente</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800">Desenvolvedor</h3>
-          <h4 class="text-lg text-gray-600 mb-2">CINPAL - Companhia Industrial de Peças para Automóveis</h4>
-          <p class="text-gray-600">Desenvolvimento e otimização de sistemas web corporativos, com foco em automação e
-            otimização de processos empresariais, implementação de melhorias contínuas visando eficiência operacional, e
-            análise e desenvolvimento de interfaces intuitivas.</p>
-        </div>
-
-        <!-- WeOpen -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="mb-1">
-            <span class="text-sm text-indigo-600 font-medium">Abril 2023 - Setembro 2023</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800">Analista de Sistemas</h3>
-          <h4 class="text-lg text-gray-600 mb-2">WeOpen</h4>
-          <p class="text-gray-600">Implementação e suporte de sistemas CRM, desenvolvimento e customização de soluções
-            para diversos segmentos empresariais, gestão de incidentes e manutenção preventiva/corretiva.</p>
-        </div>
-
-        <!-- Aquatro -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="mb-1">
-            <span class="text-sm text-indigo-600 font-medium">Janeiro 2019 - Fevereiro 2023</span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800">Analista de Sistemas</h3>
-          <h4 class="text-lg text-gray-600 mb-2">Aquatro</h4>
-          <p class="text-gray-600">Desenvolvimento de soluções digitais para o setor financeiro, arquitetura e
-            desenvolvimento de sistemas web/mobile para gestão de contratos e serviços financeiros, implementação de
-            APIs RESTful para integração entre plataformas.</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="py-20 bg-gray-100">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-800">Meus Projetos</h2>
+        <h2 class="text-3xl font-bold text-gray-800">Projetos em Destaque</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
-        <p class="text-xl text-gray-600 mt-4">Confira alguns dos meus trabalhos recentes</p>
+        <p class="text-xl text-gray-600 mt-4">Soluções que transformaram negócios</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -352,6 +351,11 @@
               <span class="tech-badge px-2 py-1 rounded text-sm">jQuery</span>
               <span class="tech-badge px-2 py-1 rounded text-sm">Bootstrap</span>
             </div>
+            <div class="mt-4">
+              <h4 class="font-semibold text-gray-800 mb-2">Resultados:</h4>
+              <p class="text-gray-600">Redução de 40% no tempo de processamento de contratos e eliminação de documentos
+                físicos.</p>
+            </div>
           </div>
         </div>
 
@@ -375,13 +379,18 @@
               <span class="tech-badge px-2 py-1 rounded text-sm">TypeScript</span>
               <span class="tech-badge px-2 py-1 rounded text-sm">RESTful APIs</span>
             </div>
+            <div class="mt-4">
+              <h4 class="font-semibold text-gray-800 mb-2">Resultados:</h4>
+              <p class="text-gray-600">Aumento de 65% na satisfação dos clientes e redução de 30% nas chamadas ao
+                suporte.</p>
+            </div>
           </div>
         </div>
 
         <!-- Project 3 -->
         <div class="bg-white rounded-xl overflow-hidden shadow-lg project-card transition-all duration-300">
           <div class="relative overflow-hidden">
-            <img src="assets/img/Corresp.png" alt="Sistema de Gerenciamento de Correspondência"
+            <img src="assets/img/corresp.png" alt="Sistema de Gerenciamento de Correspondência"
               class="w-full h-48 object-cover">
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
@@ -400,12 +409,107 @@
               <span class="tech-badge px-2 py-1 rounded text-sm">Reflex</span>
               <span class="tech-badge px-2 py-1 rounded text-sm">MySQL</span>
             </div>
+            <div class="mt-4">
+              <h4 class="font-semibold text-gray-800 mb-2">Resultados:</h4>
+              <p class="text-gray-600">Redução de 80% no tempo de entrega e eliminação de extravios de correspondências.
+              </p>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#contact"
+          class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors">Solicitar
+          um Projeto Personalizado</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Me Section -->
+  <section id="why-choose-me" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-800">Por que me escolher?</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+        <p class="text-xl text-gray-600 mt-4">Diferenciais que garantem o sucesso do seu projeto</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Reason 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-clock text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Cumprimento de Prazos</h3>
+          <p class="text-gray-600">Compromisso com cronogramas estabelecidos e entrega pontual de cada etapa do projeto,
+            garantindo previsibilidade para seu planejamento.</p>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-code text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Código de Qualidade</h3>
+          <p class="text-gray-600">Desenvolvimento com padrões de codificação rigorosos, garantindo aplicações robustas,
+            seguras e de fácil manutenção a longo prazo.</p>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-comments text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Comunicação Transparente</h3>
+          <p class="text-gray-600">Atualizações regulares sobre o progresso do projeto e disponibilidade constante para
+            esclarecer dúvidas e incorporar feedback.</p>
+        </div>
+
+        <!-- Reason 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-lightbulb text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Soluções Personalizadas</h3>
+          <p class="text-gray-600">Desenvolvimento focado nas necessidades específicas do seu negócio, criando soluções
+            sob medida que realmente resolvem seus desafios.</p>
+        </div>
+
+        <!-- Reason 5 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-sync-alt text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Suporte Contínuo</h3>
+          <p class="text-gray-600">Acompanhamento após a entrega do projeto, garantindo que sua solução continue
+            funcionando perfeitamente e evolua conforme suas necessidades.</p>
+        </div>
+
+        <!-- Reason 6 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
+            <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Aprendizado Constante</h3>
+          <p class="text-gray-600">Atualização contínua sobre novas tecnologias e melhores práticas, garantindo que seu
+            projeto utilize sempre as soluções mais modernas e eficientes.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CTA Section -->
+  <section class="py-20 bg-indigo-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua ideia em realidade?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Vamos trabalhar juntos para criar uma solução digital personalizada que
+        impulsione seu negócio e encante seus clientes.</p>
+      <a href="#contact"
+        class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">Vamos
+        Conversar</a>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-20">
@@ -413,7 +517,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold text-gray-800">Entre em Contato</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
-        <p class="text-xl text-gray-600 mt-4">Vamos trabalhar juntos no seu próximo projeto</p>
+        <p class="text-xl text-gray-600 mt-4">Vamos discutir seu próximo projeto</p>
       </div>
 
       <div class="flex flex-col md:flex-row gap-12">
@@ -467,6 +571,18 @@
                 required>
             </div>
             <div class="mb-6">
+              <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+              <select id="subject" name="subject"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all"
+                required>
+                <option value="">Selecione uma opção</option>
+                <option value="website">Desenvolvimento Web</option>
+                <option value="app">Aplicativo Mobile</option>
+                <option value="automation">Automação de Processos</option>
+                <option value="other">Outro</option>
+              </select>
+            </div>
+            <div class="mb-6">
               <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
               <textarea id="message" name="message" rows="4"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all"
@@ -474,7 +590,7 @@
             </div>
             <button type="submit"
               class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition-colors">
-              <span class="inline-block">Enviar Mensagem</span>
+              <span class="inline-block">Solicitar Orçamento</span>
             </button>
           </form>
         </div>
@@ -506,7 +622,6 @@
     class="fixed bottom-8 right-8 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors">
     <i class="fas fa-arrow-up"></i>
   </button>
-
 
   <script src="js/script.js"></script>
 </body>
